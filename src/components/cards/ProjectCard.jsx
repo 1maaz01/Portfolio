@@ -30,7 +30,7 @@ const CardContainer = styled.div`
   justify-content: center;
   align-items: center; /* Vertically center the cards within the container */
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1250px) {
     width: 100vw; /* Full viewport width */
     height: 100vh; /* Full viewport height */
     display: flex; /* Keep flex for consistency, or change to block if stacking vertically */
@@ -60,7 +60,7 @@ const Card1 = styled.div`
     box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
     filter: brightness(1.1);
   }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1250px) {
     width: 100vw;
     height: 60vh;
 `;
@@ -85,7 +85,7 @@ const Card2 = styled.div`
     filter: brightness(1.1);
   }
 
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 1250px) {
     width: 100vw;
     height: 40vh;
 
