@@ -34,7 +34,7 @@ export const Bio = {
   ],
   description:
     "I'm a software developer with experience in Data Structures & Algorithms (DSA), as well as both frontend and backend development. I also have a good grasp of DevOps and mobile app development, and I'm always working on improving these skills by building new projects. I enjoy tackling complex problems and love experimenting with new technologies to create efficient and well-structured applications.",
-
+  resume : "https://drive.google.com/file/d/18nU5d8QSbKuCA81HOIAlFeGSgfZwnwjz/view",
   github: "https://github.com/0maaz-01",
   leetcode : "https://leetcode.com/u/_maaz_1/",
   linkedin: "https://www.linkedin.com/in/mohammed-maaz-rayeen-b914a4303/",
@@ -261,7 +261,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/0maaz-01/Netflix-Clone/tree/main",
-    webapp: "https://netflix-clone-j0to.onrender.com",
+    webapp: "https://netflix-clone-production-636d.up.railway.app/",
   },
   {
     id: 9,
@@ -272,7 +272,7 @@ export const projects = [
     tags: [ "Html", "Css", "JavaSript", "React JS", "Node JS", "Express JS", "MongoDb"],
     category: "web app",
     github: "https://github.com/0maaz-01/Talkzy",
-    webapp: "https://talkzy.onrender.com/",
+    webapp: "http://talkzy-production.up.railway.app",
   },
   {
     id: 4,
@@ -291,7 +291,7 @@ export const projects = [
     title: "Xora",
     date: "Feb 2025",
     description:
-        "Landing page of an AI-Powered Video Editor! This project is a responsive, interactive landing page that showcases the features of a video editing software integrated with artificial intelligence, designed to help users create and edit videos in seconds. This SaaS landing page includes various sections, animations, and interactive elements to provide an engaging user experience.",
+        "Landing page of an AI-Powered Video Editor! This project is a responsive, interactive landing page that showcases the features of a video editing software. This SaaS landing page includes various sections, animations, and interactive elements to provide an engaging user experience.",
     image : assets.xora,
     tags: ["HTML", "CSS", "JavaScript", "React JS", "TailwindCSS"],
     category: "android app",
@@ -302,7 +302,7 @@ export const projects = [
     id: 10,
     title: "Animated Website",
     date: "Feb 2025",
-    description: "Xentry Website Landing Page Clone is an educational project that replicates the design and functionality of the original Xentry landing page. Perfect for learning front-end development and web design, it features a responsive layout for seamless use across mobile, tablet, and desktop devices, a clean and professional UI, interactive elements like buttons, forms, and smooth animations, plus SEO-friendly optimization with meta tags and proper heading structure.",
+    description: "Xentry Website Landing Page Clone is project that replicates the design and functionality of the original Xentry landing page. It features a responsive layout for seamless use across mobile, tablet, and desktop devices, a clean and professional UI, interactive elements like buttons, forms, and smooth animations, plus SEO-friendly.",
     image: assets.animated,
     tags: ["React Native", "JavaScript", "Axios"],
     category: "android app",
@@ -325,7 +325,7 @@ export const projects = [
     id: 7,
     title: "Face Recognition Attendance System",
     date: "Oct 2024",
-    description: "It is a desktop application that automates attendance tracking using advanced facial recognition technology. The system not only tracks attendance but also maintains a comprehensive database of student details. This includes personal information such as names, student IDs, classes, contact information, etc allowing for easy reference and management.",
+    description: "It is a desktop application that automates attendance tracking using facial recognition technology. The system also maintains a comprehensive database of student details. This includes personal information such as names, student IDs, classes, contact information.",
     image: assets.face_reco,
     tags: ["Python", "MySQL", "OpenCV", "Pillow", "Numpy", "MySQL Connector", "Tkinter", "OS", "DateTime", "Numpy", "Pillow", "CSV", "Cx_Freeze", "Sys"],
     category: "machine learning",
