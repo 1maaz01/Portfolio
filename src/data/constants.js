@@ -252,15 +252,16 @@ export const projects = [
     image : netflix,
     tags: [
       "React Js",
-      "PostgressSQL",
+      "Mongoose",
       "Node Js",
       "Express Js",
-      "Redux",
-      "React Flow",
+      "Html",
+      "Tailwind Css",
+      "Javascript"
     ],
     category: "web app",
-    github: "https://github.com/0maaz-01/Apple-Website",
-    webapp: "https://github.com/0maaz-01/Apple-Website",
+    github: "https://github.com/0maaz-01/Netflix-Clone/tree/main",
+    webapp: "https://netflix-clone-j0to.onrender.com",
   },
   {
     id: 9,
@@ -268,15 +269,7 @@ export const projects = [
     date: "March 2025 - March 2025",
     description: "Talkzy is a real-time messaging platform. It offers instant message delivery, and the ability to share media like images. You’ll see when your friends are online or offline, and you can even check message timestamps. It’s designed to look great on both mobile and desktop, with 24 different thems for those who prefer it. Plus, it has secure sign-up/login and a simple, user-friendly interface.",
     image: talkzy,
-    tags: [
-      "Html",
-      "Css",
-      "JavaSript",
-      "React JS",
-      "Node JS",
-      "Express JS",
-      "MongoDb"
-    ],
+    tags: [ "Html", "Css", "JavaSript", "React JS", "Node JS", "Express JS", "MongoDb"],
     category: "web app",
     github: "https://github.com/0maaz-01/Talkzy",
     webapp: "https://talkzy.onrender.com/",
@@ -300,7 +293,7 @@ export const projects = [
     description:
         "Landing page of an AI-Powered Video Editor! This project is a responsive, interactive landing page that showcases the features of a video editing software integrated with artificial intelligence, designed to help users create and edit videos in seconds. This SaaS landing page includes various sections, animations, and interactive elements to provide an engaging user experience.",
     image : assets.xora,
-    tags: ["HTML", "CSS", "JavaScript", "React.js", "TailwindCSS", "React-Scroll", "clsx", "CountUp", "Slide Down"],
+    tags: ["HTML", "CSS", "JavaScript", "React JS", "TailwindCSS"],
     category: "android app",
     github: "https://github.com/0maaz-01/Xora",
     webapp: "https://xora-wheat-beta.vercel.app/",
