@@ -278,8 +278,8 @@ export const projects = [
       "MongoDb"
     ],
     category: "web app",
-    github: "https://github.com/0maaz-01/Apple-Website",
-    webapp: "https://talkzy.vercel.app/",
+    github: "https://github.com/0maaz-01/Talkzy",
+    webapp: "https://talkzy.onrender.com/",
   },
   {
     id: 4,
