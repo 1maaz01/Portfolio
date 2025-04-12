@@ -1,11 +1,12 @@
-import React, { useRef } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
+
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-contnet: center;
+  justify-content: center;
   position: rlative;
   z-index: 1;
   align-items: center;
@@ -45,7 +46,7 @@ const Desc = styled.div`
   }
 `;
 
-const ContactForm = styled.div`
+const ContactForm = styled.form`
   width: 95%;
   max-width: 600px;
   display: flex;
@@ -58,6 +59,8 @@ const ContactForm = styled.div`
   margin-top: 28px;
   gap: 12px;
 `;
+
+
 const ContactTitle = styled.div`
   font-size: 28px;
   margin-bottom: 6px;
@@ -102,47 +105,84 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    filter: brightness(90%);
+  }
 `;
+
+
 
 const Contact = () => {
   const form = useRef();
-  const handelSubmit = (e) => {
+  const [isSending, setIsSending] = React.useState(false);
+
+  const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSending(true);
+
     emailjs
       .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
+        "service_v0fcx0p",
+        "template_aasxb4c",
         form.current,
-        "SybVGsYS52j2TfLbi"
+        "ktyE-HnN0ZCV6ClFW"
+        //"SybVGsYS52j2TfLbi"
       )
       .then(
-        (result) => {
-          alert("Message Sent");
-          form.current.result();
+        () => {
+          alert("Message Sent ✅");
+          form.current.reset(); // ✅ this resets the form
         },
         (error) => {
-          alert(error);
+          console.error(error);
+          alert("Failed to send. Try again.");
         }
-      );
+      )
+      .finally(() => setIsSending(false));
   };
+
   return (
-    <Container id="Education">
+    <Container id="Contact">
       <Wrapper>
         <Title>Contact</Title>
-        <Desc
-          style={{
-            marginBottom: "40px",
-          }}
-        >
+        <Desc style={{ marginBottom: "40px" }}>
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
-        <ContactForm onSubmit={handelSubmit}>
+        <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" name="message" rows={4} />
-          <ContactButton type="submit" value="Send" />
+          <ContactInput
+            placeholder="Your Email"
+            name="from_email"
+            required
+            aria-label="Your Email"
+          />
+          <ContactInput
+            placeholder="Your Name"
+            name="from_name"
+            required
+            aria-label="Your Name"
+          />
+          <ContactInput
+            placeholder="Subject"
+            name="subject"
+            required
+            aria-label="Subject"
+          />
+          <ContactInputMessage
+            placeholder="Message"
+            name="message"
+            rows={4}
+            required
+            aria-label="Message"
+          />
+          <ContactButton
+            type="submit"
+            value={isSending ? "Sending..." : "Send"}
+            disabled={isSending}
+          />
         </ContactForm>
       </Wrapper>
     </Container>
