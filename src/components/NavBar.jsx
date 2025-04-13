@@ -5,12 +5,11 @@ import { Bio } from "../data/constants";
 import { MenuRounded } from "@mui/icons-material";
 
 const Nav = styled.div`
-  background-color: purple;
+  background-color: rgb(122, 0, 174);
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -24,13 +23,11 @@ const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1rem;
 `;
 const NavLogo = styled(LinkR)`
   width: 80%;
   padding: 0 6px;
   font-weight: 500;
-  font-size: 18px;
   text-decoration: none;
   color: inherit;
 `;
@@ -55,6 +52,7 @@ const NavLink = styled.a`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  font-size: 20px;
   &:hover {
     color: #ffa629;
   }
@@ -133,7 +131,9 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/"></NavLogo>
+        <NavLogo to="/">
+            <img width = "120" src = "./logo_no_bg.png"/>
+        </NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
           <MenuRounded style={{ color: "inherit" }} />
