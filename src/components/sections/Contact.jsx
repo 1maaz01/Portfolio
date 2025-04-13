@@ -51,8 +51,8 @@ const ContactForm = styled.form`
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(17, 25, 40, 0.83);
-  border: 1px solid rgba(255, 255, 255, 0.125);
+  background-color: rgba(1, 1, 1, 0.83);
+  border: 1px solid rgb(255, 255, 255);
   padding: 32px;
   border-radius: 12px;
   box-shadow: rgba(23, 92, 230, 0.1) 0px 4px 24px;
@@ -70,7 +70,7 @@ const ContactTitle = styled.div`
 const ContactInput = styled.input`
   flex: 1;
   background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary + 50};
+  border: 1px solid rgb(255, 255, 255);
   outline: none;
   font-size: 18px;
   color: ${({ theme }) => theme.text_primary};
@@ -83,7 +83,7 @@ const ContactInput = styled.input`
 const ContactInputMessage = styled.textarea`
   flex: 1;
   background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary + 50};
+  border: 1px solid rgb(255, 255, 255);
   outline: none;
   font-size: 18px;
   color: ${({ theme }) => theme.text_primary};
@@ -129,7 +129,6 @@ const Contact = () => {
         "template_aasxb4c",
         form.current,
         "ktyE-HnN0ZCV6ClFW"
-        //"SybVGsYS52j2TfLbi"
       )
       .then(
         () => {
