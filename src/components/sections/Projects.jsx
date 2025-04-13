@@ -50,8 +50,8 @@ const Desc = styled.div`
 
 const ToggleButtonGroup = styled.div`
   display: flex;
-  border: 1.5px solid ${({ theme }) => theme.primary};
-  color: ${({ theme }) => theme.primary};
+  border: 1.5px solid rgb(184, 34, 248);
+  color: rgb(184, 34, 248);
   font-size: 16px;
   border-radius: 12px;
 font-weight 500;
@@ -64,8 +64,9 @@ const ToggleButton = styled.div`
   padding: 8px 18px;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
   &:hover {
-    background: ${({ theme }) => theme.primary + 20};
+    background: rgb(75, 68, 78);
   }
   @media (max-width: 768px) {
     padding: 6px 8px;
@@ -79,7 +80,7 @@ const ToggleButton = styled.div`
 `;
 const Divider = styled.div`
   width: 1.5px;
-  background: ${({ theme }) => theme.primary};
+  background: rgb(184, 34, 248);;
 `;
 
 const CardContainer = styled.div`
