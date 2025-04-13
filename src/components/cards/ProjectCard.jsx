@@ -1,25 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-
-/*const CardContainer = styled.div`
-  display: flex; 
-  gap: 20px; 
-  justify-content: flex-start;
-  padding: 10px;
-  height: 100vh;
-  width : 100vw;
-  align-items: center; 
-
-  @media only screen and (max-width: 1000px) {
-    width: 100vw;
-    height: 100vh;
-    display : block;
-  `
-*/
-
-
-
 const CardContainer = styled.div`
   display: flex; /* Ensure cards are displayed side by side */
   gap: 50px; /* Space between the cards */
@@ -41,11 +22,11 @@ const CardContainer = styled.div`
 
 
 
-
+// ${({ theme }) => theme.card}
 const Card1 = styled.div`
   width: 60vw; /* Set width to 60% for Card1 */
   height: 80vh; /* Set height to 60% */
-  background-color: ${({ theme }) => theme.card};
+  background-color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
@@ -57,21 +38,21 @@ const Card1 = styled.div`
   transition: all 0.5s ease-in-out;
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 50px 4px rgb(187, 0, 255);
     filter: brightness(1.1);
   }
   @media only screen and (max-width: 1250px) {
     width: 100vw;
     height: 60vh;
 `;
-
+//  ${({ theme }) => theme.card}
 const Card2 = styled.div`
   width: 40vw; /* Set width to 40% for Card2 */
   height: 80vh; /* Set height to 60% */
-  background-color: ${({ theme }) => theme.card};
+  background-color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 12px 4px rgba(251, 249, 249, 0.44);
   overflow:hidden;
   padding: 26px 20px;
   display: flex;
@@ -81,7 +62,7 @@ const Card2 = styled.div`
 
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 50px 4px rgb(187, 0, 255);
     filter: brightness(1.1);
   }
 
