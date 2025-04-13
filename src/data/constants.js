@@ -248,8 +248,8 @@ export const projects = [
       "React Flow",
     ],
     category: "web app",
-    github: "https://github.com/0maaz-01/Apple-Website",
-    webapp: "https://github.com/0maaz-01/Apple-Website",
+    github: "https://github.com/0maaz-01/Netflix-Clone",
+    webapp: "https://netflix-clone-production-636d.up.railway.app/",
   },
   {
     id: 9,
@@ -267,8 +267,8 @@ export const projects = [
       "MongoDb"
     ],
     category: "web app",
-    github: "https://github.com/0maaz-01/Apple-Website",
-    webapp: "https://talkzy.vercel.app/",
+    github: "https://github.com/0maaz-01/Talkzy",
+    webapp: "talkzy-production.up.railway.app",
   },
   {
     id: 4,
