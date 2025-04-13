@@ -33,13 +33,15 @@ export const Bio = {
     "Competitive Programmer",
   ],
   description:
-    "I'm a software developer with experience in Data Structures & Algorithms (DSA), as well as both frontend and backend development. I'm always working on improving these skills by building new projects. I enjoy tackling complex problems and love experimenting with new technologies to create efficient and well-structured applications.",
+    "I'm a software developer with experience in Data Structures & Algorithms (DSA), as well as both frontend and backend development. I'm always working on improving these skills by building new projects. I enjoy tackling complex problems and love experimenting with new technologies to create efficient and well-structured applications. I currently work in python and javascript ",
+
 
   github: "https://github.com/0maaz-01",
   leetcode : "https://leetcode.com/u/_maaz_1/",
   linkedin: "https://www.linkedin.com/in/mohammed-maaz-rayeen-b914a4303/",
   twitter: "https://x.com/1_maaz_1",
   insta: "https://www.instagram.com/_.maaz._1/?igsh=eG5zeXN1NDhoc25y#",
+  resume : "https://drive.google.com/file/d/18nU5d8QSbKuCA81HOIAlFeGSgfZwnwjz/view?usp=drive_link",
 };
 
 export const skills = [
@@ -89,11 +91,6 @@ export const skills = [
           "https://res.cloudinary.com/dgngxuh72/image/upload/v1741131821/nlbvkbmermofz5vo9srj.jpg",
 
       },
-
-      {
-        name: "React Native",
-        image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
-      },
       {
         name: "Node Js",
         image: "https://skillicons.dev/icons?i=nodejs",
@@ -128,12 +125,6 @@ export const skills = [
         name: "MongoDB",
         image:
           "https://skillicons.dev/icons?i=mongodb",
-      },
-
-      {
-        name: "AWS",
-        image:
-          "https://skillicons.dev/icons?i=aws",
       },
 
       {
